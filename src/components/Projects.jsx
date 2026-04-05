@@ -1,111 +1,125 @@
-// Projects.jsx
-
 const Projects = () => {
   return (
     <section className="py-20 px-6 bg-gray-50 text-center">
       <h2 className="text-4xl font-semibold mb-6">Projects</h2>
+
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto text-left">
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-2xl font-semibold mb-2">Alcohol Testing App</h3>
-          <p className="text-gray-700">
-            Patented iPad app with BLE integration for real-time alcohol test
-            data collection. Built using React Native and Node.js. Live in
-            airports across India for Indigo Airlines.
-          </p>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-2xl font-semibold mb-2">E-commerce App</h3>
-          <p className="text-gray-700">
-            Led a team of 6 for a secure U.S. e-commerce platform. Focused on
-            mobile security, payment integration, and intuitive UX.
-          </p>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        {/* 🔥 FEATURED AI PROJECT */}
+        <div className="bg-white p-6 rounded-lg shadow-md border-2 border-blue-500">
           <h3 className="text-2xl font-semibold mb-2">
-            Live Streaming & Whiteboard App
+            🚀 AI Resume Analyzer & Job Assistant
           </h3>
           <p className="text-gray-700">
-            Used Agora for video/audio and bridged native iOS/Android code for
-            real-time whiteboard. Targeted for virtual classrooms.
+            Full-stack AI application that analyzes resumes, detects skill gaps,
+            and generates interview questions using LLMs. Designed with scalable
+            backend architecture and real-world AI integration.
           </p>
-        </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-2xl font-semibold mb-2">
-            Health App with Wearable Sync
-          </h3>
-          <p className="text-gray-700">
-            Integrated Apple Watch and Google Fit APIs to collect and visualize
-            user health data inside a cross-platform React Native app.
-          </p>
-        </div>
+          <ul className="mt-3 text-gray-800 list-disc ml-5">
+            <li>AI-powered resume analysis using LLM APIs</li>
+            <li>Job description matching & skill gap detection</li>
+            <li>Interview question generation</li>
+            <li>Full-stack system (React + Node + MongoDB)</li>
+          </ul>
 
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-2xl font-semibold mb-2">
-            MERN Stack Diamond Website
-          </h3>
-          <p className="text-gray-700">
-            Built and deployed a website using ReactJS and backend using Node.js
-            and MongoDB and deployed on AWS EC2. Razorpay payment gateway
-            integrated.
-          </p>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-2xl font-semibold mb-2">
-            Agriculture Analytics App
-          </h3>
-          <p className="text-gray-700">
-            Developed dynamic charts and graphs for farmers and analysts to
-            track seasonal growth and climate-based outputs.
-          </p>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-2xl font-semibold mb-2">Taqwea</h3>
-          <p className="text-gray-700">
-            Mobile app for live video classes with chat functionality.
-            <br></br>
+          <div className="mt-3">
             <a
               className="text-blue-500 underline"
-              href="https://play.google.com/store/apps/details?id=com.taqwea"
+              href="https://github.com/kratikmodh/genai-job-assistant"
               target="_blank"
             >
-              Play Store
-            </a>{" "}
-            |
-            <a
-              className="text-blue-500 underline ml-1"
-              href="https://apps.apple.com/in/app/%D9%85%D9%86%D8%B5%D8%A9-%D8%AA%D9%82%D9%88%D9%8A%D8%A9/id1660015433"
-              target="_blank"
-            >
-              App Store
+              GitHub
             </a>
+          </div>
+        </div>
+
+        {/* 🔥 RAG PROJECT */}
+        <div className="bg-white p-6 rounded-lg shadow-md border-2 border-green-500">
+          <h3 className="text-2xl font-semibold mb-2">
+            🧠 RAG Pipeline (Python)
+          </h3>
+          <p className="text-gray-700">
+            Built a complete Retrieval-Augmented Generation (RAG) pipeline from
+            scratch using embeddings, vector databases, and semantic retrieval.
+          </p>
+
+          <ul className="mt-3 text-gray-800 list-disc ml-5">
+            <li>Document ingestion & chunking</li>
+            <li>Embedding generation</li>
+            <li>Vector DB (Chroma)</li>
+            <li>Context-aware response generation</li>
+          </ul>
+
+          <div className="mt-3">
+            <a
+              className="text-blue-500 underline"
+              href="https://github.com/kratikmodh/rag-python-pipeline"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        {/* 🔥 NODE BACKEND */}
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h3 className="text-2xl font-semibold mb-2">
+            ⚙️ AI Backend System (Node.js)
+          </h3>
+          <p className="text-gray-700">
+            Designed a scalable backend system for AI applications with support
+            for LLM integration and RAG-ready architecture.
+          </p>
+
+          <div className="mt-3">
+            <a
+              className="text-blue-500 underline"
+              href="https://github.com/kratikmodh/rag-node-backend"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        {/* 🔥 SUPER APP ARCHITECTURE */}
+        <div className="bg-white p-6 rounded-lg shadow-md border-2 border-purple-500">
+          <h3 className="text-2xl font-semibold mb-2">
+            🧩 Super App Mini-App Architecture (React Native)
+          </h3>
+          <p className="text-gray-700">
+            Implemented a dynamic micro-app architecture where multiple apps
+            from different repositories are loaded at runtime using bundles.
+          </p>
+
+          <ul className="mt-3 text-gray-800 list-disc ml-5">
+            <li>Dynamic module loading via bundles</li>
+            <li>Independent app deployment</li>
+            <li>Scalable super-app architecture</li>
+            <li>Improved modularity & release cycles</li>
+          </ul>
+        </div>
+
+        {/* EXISTING PROJECTS */}
+
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h3 className="text-2xl font-semibold mb-2">
+            Breathalyser (Alcohol Testing App)
+          </h3>
+          <p className="text-gray-700">
+            iPad app for Indigo Airlines replacing manual alcohol testing.
+            Approved by DGCA, deployed across 36+ airports handling ~1000 tests
+            daily.
           </p>
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-2xl font-semibold mb-2">MorLuxury</h3>
+          <h3 className="text-2xl font-semibold mb-2">
+            MorLuxury (E-commerce App)
+          </h3>
           <p className="text-gray-700">
-            E-commerce platform for beauty products.
-            <br></br>
-            <a
-              className="text-blue-500 underline"
-              href="https://play.google.com/store/apps/details?id=com.morluxury"
-              target="_blank"
-            >
-              Play Store
-            </a>{" "}
-            |
-            <a
-              className="text-blue-500 underline ml-1"
-              href="https://apps.apple.com/in/app/morluxury/id1645865886"
-              target="_blank"
-            >
-              App Store
-            </a>
+            Led development of a cosmetics e-commerce app with secure payment
+            flows.
           </p>
         </div>
       </div>
